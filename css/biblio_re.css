@@ -1,0 +1,98 @@
+@charset "utf-8";
+
+
+
+h2 {
+	text-align: center;
+	font-size: 2em;
+	margin-top: 20px;
+}
+
+#reem {
+	padding: 5px;
+	text-decoration: none;
+	color: black;
+	background-color: burlywood;
+	border: groove lightgrey ;
+	font-size: 1.25em;
+	font-weight: 700;
+	border-radius: 5px;
+	position: relative;
+	top: 50px;
+	left: 2%;
+}
+#reem:hover {
+	background-color: white;
+}
+
+form {
+	padding: 20px 20px;
+	text-align: center;
+}
+select, option, input, button {
+	font-size: 1em;
+	padding: 5px 10px;
+	border-radius: 3px;
+}
+
+input {
+	width: 350px;
+}
+
+button {
+	border-radius: 3px;
+}
+table {
+	border: groove 3px ;
+	margin: 20px 0px 30px 2%;
+	text-align: left;
+	
+	line-height: 30px;
+	width: 1200px;
+	/*height: 900px;*/
+}
+th,td {
+	border: groove 1px;
+}
+th {
+	font-size: 1.05em;
+	background: burlywood;
+}
+td {
+	height: 20px;
+}
+
+table tr td a {
+	text-decoration: none;
+	color: black;
+}
+table tr td a:hover {
+	color: red;
+}
+
+.line1:hover {
+	background-color: white; 
+}
+
+#cell1 {
+	width: 120px;
+}
+#cell3 {
+	width: 180px;
+}
+#cell4, #cell5 {
+	width: 100px;
+}
+.back2top {
+	padding: 5px;
+	text-decoration: none;
+	color: black;
+	background-color: burlywood;
+	border: groove lightgrey ;
+	font-size: 1em;
+	font-weight: 700;
+	border-radius: 5px;
+	position: relative;
+	
+	left: 40%;
+}

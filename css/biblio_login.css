@@ -1,0 +1,110 @@
+@charset "utf-8";
+
+
+body {
+	background-color: antiquewhite;
+}
+
+/*.bilogo {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}*/
+
+main {
+	
+	text-align: center;
+	margin: 30px auto;
+}
+
+h2 {
+	text-align: center;
+	font-size: 1.75em;
+
+}
+
+
+form {
+	max-width: 500px;
+	height: 200px;
+	border: solid 2px;
+	margin: 30px auto;
+	border-radius: 10px;
+	padding: 20px;
+}
+
+
+
+form label {
+	float: left;
+	font-size: 1.15em;
+	font-weight: 600;
+}
+
+form input {
+	float: right;
+	width: 250px;
+	font-size: 1.15em;
+	margin-left: 20px;
+}
+
+fieldset {
+	border: none;
+	margin: 40px auto;
+}
+
+
+#connexion {
+	margin-top: 20px;
+	margin-left: 120px;
+	font-size: 1em;
+	padding: 10px;
+	border-radius: 10px;
+	border: groove antiquewhite;
+ 	background-color: burlywood;
+ 	width: 150px;
+ 	text-align: center;
+}
+
+#connexion a {
+	color: dimgrey;
+	text-decoration: none; 
+}
+
+
+@media screen and (max-width: 600px) {
+
+	main {
+		width: 80%;
+	}
+
+	form {
+		width: 90%;
+		height: 300px;
+		font-size: 1.25em;
+	}
+
+	label {
+		width: 90%;
+	}
+
+	.labelnom {
+		margin-top: -25px;
+	}
+
+	.labelid {
+		margin-top: 20px;
+	}
+
+	#nom, #idnumber {
+		width: 350px;
+		margin: 10px auto;
+	}
+	#connexion {
+		margin-top: 75px;
+		margin-left: 90px;
+	}
+
+	
+
+}

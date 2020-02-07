@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Fishe d'mprunt de lecteur</title>
+<meta name="description" content="Fishe d'mprunt de usager">
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<link rel="stylesheet" type="text/css" href="../css/global_2.css">
+<link rel="stylesheet" type="text/css" href="../css/biblio_emp_détail.css">
+<link rel="stylesheet" type="text/css" href="../css/biblio_menu.css">
+<!--<link rel="icon" type="image/png" href="dossierimages/favicon.png">-->
+</head>
+<body>
+<header>
+	<a href="../pages/biblio_management.html"><img id="top" src="../images/books_2.jpg"></a>
+	<a href="../pages/biblio_management.html">
+	<img id="booksmall" src="../images/booksmall_2.jpg"></a>
+	<div>
+	<h1>Fil Rouge Bibliothéque</h1>
+	</div>
+</header>
+
+<nav id="menu">
+	<ul>
+		<li><a href="../pages/biblio_ouvrages.html">Ouvrages</a> </li>
+		<li><a href="../pages/biblio_usagers.html">Comptes</a> </li>
+		<li><a href="../pages/biblio_emp.html">Emprunts</a> </li>
+		<li><a href="../pages/biblio_re.html">Retours & Réservations</a> </li>
+		<li><a href="../pages/biblio_sta.html">Statistiques</a> </li>
+	</ul>
+</nav>
+
+<main>
+	<h2>Fishe d'mprunt de lecteur</h2>
+
+	<a id="reservation" href="#reserve">Réservation</a>
+	<a id="retour" href="#return">Retour d'emprunt</a>
+
+	<form method="post" action="fichier.php">
+		<fieldset>
+			<legend>Infomation Lecteur</legend>
+
+			<input id="sexe" name="sexe" readonly="readonly" value="Mme">
+			<label for="nom">Nom</label>
+			<input id="nom" type="text" name="nom" readonly="readonly" value="CHENG"><br>
+			<label id="pré" for="prénom">Prénom</label>
+			<input id="prénom" type="text" name="prénom" readonly="readonly" value="TING-CHUN">
+			<label id="nphone">
+			<br>
+			Numéro de téléphone</label>
+			<input id="nphone" type="number" name="nphone" readonly="readonly" value="0751536217">
+			<br>
+			<label for="email">E-mail</label>
+			<input id="email" type="email" name="email" readonly="readonly" value="christine1108@hotmail.com">
+			<br>
+			<label for="adresse">Adresse</label>
+			<input id="adresse" name="adresse" readonly="readonly" value="2 Ruelle du Moulin, 95130 Franconville">
+			
+
+			<legend id="statut">Statut</legend>
+			<input id="student" type="radio" name="étudiant" checked>Étudiant
+			
+			
+		</fieldset>
+		<fieldset>
+			<legend>Infomation sur la carte</legend>
+			<label for="ncard">Numéro de carte</label>
+			<input id="ncard" type="text" name="ncard" value="CHE-TIN-118">
+			<br>
+			<label for="dateinscri">Date d'inscription</label>
+			<input id="dateinscri" type="text" name="dateinscri" value="28/10/2019">
+			<label for="findate">La fin de date</label>
+			<input id="findate" type="text" name="findate" value="27/10/2020">
+		</fieldset>
+		<fieldset>
+			<legend for="">Infomation Emprunt</legend>
+			<br>
+			<label for="emtitre">Titre</label>
+			<input class="titre" id="emtitre" type="text" name="emtitre" value="La panthere des neiges"><br>
+			<label for="isbn">ISBN</label>
+			<input id="isbn" type="text" name="isbn" value="9782072822322">
+			<br>
+			<label for="dateemp">Date Emprunt</label>
+			<input id="dateemp" type="text" name="dateemp" value="22/11/2019">
+			<label for="dateretour">Date Retour</label>
+			<input id="dateretour" type="text" name="dateretout" value="05/12/2019">
+			<br>
+			<legend id="situation" for="situation">Situation</legend>
+			<input id="retard" type="checkbox" name="retard" value="retard">Retard
+			<br>
+			<input id="renouvellement" type="checkbox" name="renouvellement" value="renouvellement">Renouvellement
+			<input class="valider" type="submit" name="" value="valider">
+		</fieldset>
+		<button id="modifier" type="submit" name="modifier">Modifier</button>
+		<input id="effacer" type="reset" name="effacer" value="Effacer ce compte">
+	</form>
+
+	<form>
+		<fieldset>
+			<legend id="reserve">Réservation</legend>
+			<label for="booked">Titre</label>
+			<input class="titre" id="booked" type="text" name="booked" value="La parole est un sport de combat" readonly><br>
+			<label class="isbn" for="bookedisbn">ISBN</label>
+			<input id="bookedisbn" type="text" name="bookedisbn" value="978-2253188186" readonly><br>
+			<label>Date réservation</label>
+			<input type="text" name="" value="20/11/2019">
+			<label>Fin réservation</label>
+			<input type="text" name="" value="27/11/2019">
+			<br>
+			<input type="checkbox" name="supprimer" value="supprimer">Supprimer cette réservation
+			<input class="valider" id="supprimer" type="submit" name="" value="valider">
+		</fieldset>
+	</form>
+
+	<form>
+		<fieldset>
+			<legend id="return">Retour d'emprunt</legend>
+			<label id="retitre" >Titre</label>
+			<input class="titre" id="retitre" type="text" name="" value="Toutes blessent, la dernière tue" readonly><br>
+			<label class="isbn">ISBN</label>
+			<input type="text" name="" value="978-2266291903" readonly>
+			<br>
+			<label class="" >Auteur</label>
+			<input type="text" name="" value="Karine Giebel" readonly>
+			<label class="editeur" >Editeurs</label>
+			<input type="text" name="" value="Pocket" readonly>
+			<label class="type" >Type</label>
+			<input type="text" name="" value="Roman" readonly>
+		</fieldset>
+	</form>
+	<a class="back2top" href="#menu">Retour en Haut</a>
+	<br><br>
+</main>
+<!--<hr>
+<footer>
+	<div>34 Rue de la Station, 95130 Franconville</div>
+	<div>Télephone : 01 51 53 62 17</div>
+	<div>Email : <a href="mailto:bibliofranconville@info.com">bibliofranconville@info.com</a></div>
+</footer>-->
+</body>
+</html>

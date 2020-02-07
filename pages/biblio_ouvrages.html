@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>La gestion de ouvrages</title>
+<meta name="description" content="Page de la gestion de ouvrages">
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<link rel="stylesheet" type="text/css" href="../css/global_2.css">
+<link rel="stylesheet" type="text/css" href="../css/biblio_ouvrages.css">
+<link rel="stylesheet" type="text/css" href="../css/biblio_menu.css">
+<!--<link rel="icon" type="image/png" href="dossierimages/favicon.png">-->
+</head>
+<body>
+<header>
+	<a href="../pages/biblio_management.html"><img id="top" src="../images/books_2.jpg"></a>
+	<a href="../pages/biblio_management.html">
+	<img id="booksmall" src="../images/booksmall_2.jpg"></a>
+	<div>
+	<h1>Fil Rouge Bibliothéque</h1>
+	</div>
+</header>
+
+
+<nav id="menu">
+	<ul>
+		<li><a href="../pages/biblio_ouvrages.html">Ouvrages</a> </li>
+		<li><a href="../pages/biblio_usagers.html">Comptes</a> </li>
+		<li><a href="../pages/biblio_emp.html">Emprunts</a> </li>
+		<li><a href="../pages/biblio_re.html">Retours & Réservations</a> </li>
+		<li><a href="../pages/biblio_sta.html">Statistiques</a> </li>
+	</ul>
+</nav>
+
+
+
+
+<main>
+	<h2>Fishe d'ouvrage</h2>
+
+	<form method="get" action="#">
+		
+		<select name="Catégorie" selected>
+			<option value="titre">Titre</option>
+			<option value="auteur">Auteur</option>
+			<option value="editeur">Editeur</option>
+			<option value="type">Type</option>
+		</select>
+		
+		<input type="search" name="keyin" placeholder="Tapez votre recherche...">
+		<button type="submit" name="chercher">chercher</button>
+	</form>
+
+	<table>
+		<tr>
+			<th id="cell1">ISBN</th>
+			<th id="cell2">Titre</th>
+			<th id="cell3">Auteur</th>
+			<th id="cell4">Editeur</th>
+			<th id="cell5">Type</th>
+		</tr>
+		<tr>
+			<td class="line1"><a href="../pages/biblio_ouvrages_détail.html">9782253188186</a></td>
+			<td class="line1">La parole est un sport de combat</td>
+			<td class="line1"><a href="#">Bertrand Périer</a></td>
+			<td class="line1">Lgf</td>
+			<td class="line1">Guide</td>
+		</tr>
+		<tr>
+			<td class="line1"><a href="../pages/biblio_ouvrages_détail2.html">9782072822322</a></td>
+			<td class="line1">La panthere des neiges</td>
+			<td class="line1"><a href="#">Sylvain Tesson</a></td>
+			<td class="line1">GALLIMARD</td>
+			<td class="line1">Roman</td>
+		</tr>
+		<tr>
+			<td class="line1"><a href="../pages/biblio_ouvrages_détail3.html">9782266291903</a></td>
+			<td class="line1">Toutes blessent, la dernière tue</td>
+			<td class="line1">Karine Giebel</td>
+			<td class="line1">Pocket</td>
+			<td class="line1">Roman</td>
+		</tr>
+		<tr>
+			<td class="line1"><a href="#"></a></td>
+			<td class="line1"></td>
+			<td class="line1"></td>
+			<td class="line1"></td>
+			<td class="line1"></td>
+		</tr>
+		<tr>
+			<td class="line1"><a href="#"></a></td>
+			<td class="line1"></td>
+			<td class="line1"></td>
+			<td class="line1"></td>
+			<td class="line1"></td>
+		</tr>
+		<tr>
+			<td class="line1"><a href="#"></a></td>
+			<td class="line1"></td>
+			<td class="line1"></td>
+			<td class="line1"></td>
+			<td class="line1"></td>
+		</tr>
+		<tr>
+			<td class="line1"><a href="#"></a></td>
+			<td class="line1"></td>
+			<td class="line1"></td>
+			<td class="line1"></td>
+			<td class="line1"></td>
+		</tr>
+		<tr>
+			<td class="line1"><a href="#"></a></td>
+			<td class="line1"></td>
+			<td class="line1"></td>
+			<td class="line1"></td>
+			<td class="line1"></td>
+		</tr>
+	</table>
+
+	<a class="back2top" href="#menu">Retour en Haut</a>
+	<br><br>
+</main>
+<!--<hr>
+<footer>
+	<div>34 Rue de la Station, 95130 Franconville</div>
+	<div>Télephone : 01 51 53 62 17</div>
+	<div>Email : <a href="mailto:bibliofranconville@info.com">bibliofranconville@info.com</a></div>
+</footer>-->
+</body>
+</html>

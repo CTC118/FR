@@ -1,0 +1,123 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
+hr {
+	margin: 20px auto;
+}
+
+main {
+	font-family: 'Quicksand', sans-serif;
+	position: relative;
+	top: 0px;
+	left: 0px;
+	margin: 30px auto;
+	max-width:1300px;
+
+}
+
+h2 {
+	text-align: center;
+	font-weight: 700;
+	font-size: 2em;
+}	
+	
+#panier {
+	position: absolute;
+ 	top: 50px;
+ 	right: 200px;
+ 	color: dimgrey;
+ 	background-color: burlywood;
+ 	padding: 10px;
+ 	border: solid 3px lightgrey;
+ 	border-radius: 5px;
+ 	text-decoration: none; 
+ 	font-size: 1em;
+  	text-align: center;
+  	font-weight: 700;
+  	
+}
+
+#rechercher {
+	position: absolute;
+ 	top: 110px;
+ 	right: 200px;
+ 	color: dimgrey;
+ 	background-color: burlywood;
+ 	padding: 10px;
+ 	border: solid 3px lightgrey;
+ 	border-radius: 5px;
+ 	text-decoration: none; 
+ 	font-size: 1em;
+  	text-align: center;
+  	font-weight: 700;
+  	width: 82px;
+}
+
+ table {
+ 	margin: 20px auto;
+ 	width: 500px;
+ 	table-layout: fixed;
+ 	
+ }
+
+ table tr th {
+ 	text-align: left;
+ 	width: 120px;
+ }
+
+section {
+	display: flex;
+ 	flex-direction: row;
+ 	justify-content: space-around;
+ 	margin: 30px 50px;
+}
+ #boxleft, #boxright {
+ 	
+ 	border: groove antiquewhite;
+ 	width: 300px;
+ 	height: 200px;
+ 	background-color: burlywood;
+ 	padding: 5px;
+ 	overflow-y: scroll;
+
+ }
+
+ @media screen and (max-width: 600px) {
+
+ 	#panier {
+ 		width: 150px;
+ 		font-size: 1.25em;
+ 		top: -90px;
+ 		left: 10%;
+ 	}
+
+ 	#rechercher {
+ 		width: 150px;
+ 		font-size: 1.25em;
+ 		top: -90px;
+ 		left: 50%;
+ 	}
+
+ 	main {
+ 		margin-top: 120px; 
+ 	}
+
+ 	table  {
+ 		width: 600px;
+		margin: 30px 20px;
+		font-size: 1.25em; 
+ 	}
+
+ 	section {
+ 		flex-direction: column;
+ 		
+ 		width: 90%;
+ 	}
+
+ 	#boxleft, #boxright {
+ 		margin: 5% 10%;
+ 	}
+
+
+
+ }

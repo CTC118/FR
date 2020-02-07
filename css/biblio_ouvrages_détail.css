@@ -1,0 +1,52 @@
+@charset "utf-8";
+
+h2 {
+	text-align: center;
+	font-size: 2em;
+	margin-top: 20px;
+}
+#retour {
+	padding: 5px;
+	text-decoration: none;
+	color: black;
+	background-color: burlywood;
+	border: groove lightgrey ;
+	font-size: 1.25em;
+	font-weight: 700;
+	border-radius: 5px;
+	position: relative;
+	top: 20px;
+	left: 2%;
+}
+#retour:hover {
+	background-color: white;
+}
+table {
+	border: groove 3px lightgrey;
+	margin: 40px 0px 30px 2%;
+	text-align: left;
+	
+	line-height: 30px;
+	width: 1200px;
+	/*height: 900px;*/
+}
+
+table tr img {
+	width: 300px;
+	border: double lightgrey 2px;
+}
+td {
+	width: 300px;
+}
+.titre, .statut, .sta {
+	font-size: 1.5em;
+	font-weight: 600;
+}
+.valider {
+	font-size: 1.05em;
+	font-weight: 500;
+}
+#sta {
+	border: dashed lightgrey;
+}
+

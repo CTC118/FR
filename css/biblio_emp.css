@@ -1,0 +1,54 @@
+@charset "utf-8";
+
+h2 {
+	text-align: center;
+	font-size: 2em;
+	margin-top: 20px;
+}
+
+table {
+	border: groove 3px ;
+	margin: 20px 0px 30px 2%;
+	text-align: left;
+	
+	line-height: 30px;
+	width: 1200px;
+	/*height: 900px;*/
+}
+th,td {
+	border: groove 1px;
+
+}
+th {
+	font-size: 1.05em;
+	background: burlywood;
+}
+td {
+	height: 20px;
+}
+
+table tr td a {
+	text-decoration: none;
+	color: black;
+}
+table tr td a:hover {
+	color: red;
+}
+
+.line1:hover {
+	background-color: white; 
+}
+#cell1 {
+	width: 120px;
+}
+#cell2 {
+	width: 100px;
+}
+#cell3 {
+	width: 300px;
+}
+
+#cell4, #cell5 {
+	width: 100px;
+}
+ 

@@ -1,0 +1,50 @@
+@charset "utf-8";
+
+#top {
+	position: relative;
+	top: 0px;
+	left: 0px;
+	opacity: 0.75;
+	border: none;
+	
+}
+
+#booksmall {
+	display: none;
+}
+span {
+    position: absolute;
+    top: 120px;
+    left: 850px;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+ 
+    header {
+		max-width: 600px;
+	}
+
+	#top {
+		display: none;
+	}
+
+	#booksmall {
+	display: block;
+	width: 600px;
+	opacity: 0.75;
+	border: none;
+	}
+
+	
+	header div {
+		font-size: 1.5em;
+		position: absolute;
+		top: -10px;
+		left: -340px;
+	
+	}
+    
+    
+    
+}

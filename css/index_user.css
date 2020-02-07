@@ -1,0 +1,103 @@
+@charset "utf-8";
+
+main {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	margin: 50px 10px;
+
+}
+
+h2 {
+	text-align: center;
+	margin: 15px auto; 
+	font-size: 2em;
+}
+
+section h2 {
+	margin-top: 50px;
+}
+
+#aleft {
+	border: groove 3px;
+	width:250px;
+	border-radius: 5px;
+	background-color: antiquewhite;
+	
+}
+
+#aleft table {
+	padding: 15px;
+	font-size: 1.25em;
+	 
+	margin: 0px auto;
+}
+
+
+main section {
+	border: groove 3px;
+	width:500px;
+	text-align: center; 
+	border-radius: 10px;
+	background-color: burlywood;
+	
+	opacity: 0.75;
+}
+
+button {
+	font-size: 1.75em;
+	width: 250px;
+	height: 50px;
+	border-radius: 10px;
+}
+
+button a {
+	text-decoration: none;
+	color: black;
+}
+
+#aright {
+	border: double;
+	width:400px;
+	border: groove 3px;
+	border-radius: 5px;
+	background-color: antiquewhite;
+}
+
+#aright p {
+	padding: 15px;
+	font-size: 1.25em;
+}
+
+@media screen and (max-width: 600px) {
+	
+	main {
+		flex-direction: column-reverse;
+	}
+
+	#aleft, section, #aright {
+		width: 400px;
+		margin: 20px;
+		border-radius: 10px;
+		padding: 10px 10px 30px 10px;
+	}
+
+	main section {
+		width: 400px;
+	}
+
+	section h2 {
+	margin-top: 20px;
+	}
+
+	button {
+	font-size: 1.5em;
+	width: 200px;
+	height: 50px;
+	border-radius: 10px;
+}
+
+	#aright p, #aleft table {
+	font-size: 1.5em;
+	}
+}

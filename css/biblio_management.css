@@ -1,0 +1,35 @@
+@charset "utf-8";
+
+nav {
+	margin-top: 30px;
+	margin-left: 320px;
+	padding: 20px;
+	
+	font-size: 2em;
+	font-weight: 700;
+}
+
+
+nav ul li {
+	text-align: center;
+	padding: 10px;
+	list-style-type: none;
+	background: burlywood;
+	border: groove lightgrey ;
+	border-radius: 5px;
+	margin-bottom: 15px;
+	width: 400px;
+}
+
+nav ul li:hover {
+	background-color: white;
+}
+
+nav ul li a {
+	text-decoration: none;
+}
+
+nav ul li a:visited {
+	color: black;
+}
+

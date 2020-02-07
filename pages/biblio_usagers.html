@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>La gestion de usagés</title>
+<meta name="description" content="organiser les comptes de usagers">
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<link rel="stylesheet" type="text/css" href="../css/global_2.css">
+<link rel="stylesheet" type="text/css" href="../css/biblio_usagers.css">
+<link rel="stylesheet" type="text/css" href="../css/biblio_menu.css">
+<!--<link rel="icon" type="image/png" href="dossierimages/favicon.png">-->
+</head>
+<body>
+<header>
+	<a href="../pages/biblio_management.html"><img id="top" src="../images/books_2.jpg"></a>
+	<a href="../pages/biblio_management.html">
+	<img id="booksmall" src="../images/booksmall_2.jpg"></a>
+	<div>
+	<h1>Fil Rouge Bibliothéque</h1>
+	</div>
+</header>
+
+<nav>
+	<ul>
+		<li><a href="../pages/biblio_ouvrages.html">Ouvrages</a> </li>
+		<li><a href="../pages/biblio_usagers.html">Comptes</a> </li>
+		<li><a href="../pages/biblio_emp.html">Emprunts</a> </li>
+		<li><a href="../pages/biblio_re.html">Retours & Réservations</a> </li>
+		<li><a href="../pages/biblio_sta.html">Statistiques</a> </li>
+	</ul>
+</nav>
+
+<main>
+	<h2>Liste d'adhérents</h2>
+	
+	<a id="ajouter" href="../pages/biblio_usagerscompte.html">+ compte</a>
+	<form method="get" action="#">
+		
+		<select name="Catégorie" selected>
+			<option value="idnumber">N° ID.</option>
+			<option value="nom">Nom</option>
+			<option value="statut">Statut</option>
+			<option value="email">E-mai</option>
+		</select>
+		
+		<input type="search" name="keyin" placeholder="Tapez votre recherche...">
+		<button type="submit" name="chercher">chercher</button>
+		
+	</form>
+
+	<table>
+		<tr>
+			<th>Numéro d'identité</th>
+			<th>Nom et prénom de usager</th>
+			<th id="cell3">E-mail</th>
+			<th id="cell4">Statut</th>
+			<th id="cell5">La fin de date</th>
+		</tr>
+		<tr>
+			<td class="line1"><a href="../pages/biblio_emp_détail.html">CHE-CHR-118</a></td>
+			<td class="line1">Cheng Christine</td>
+			<td class="line1"><a href="mailto:christine1108@hotmail.com">christine1108@hotmail.com</a></td>
+			<td class="line1">étudiant</td>
+			<td class="line1">05/07/2020</td>
+		</tr>
+		<tr>
+			<td class="line1"><a href="#">BRA-FLO-413</a></td>
+			<td class="line1">Brasquies Florent</td>
+			<td class="line1"><a href="mailto:florent.brasquies@gmail.com">florent.brasquies@gmail.com</a></td>
+			<td class="line1">professeur</td>
+			<td class="line1">21/11/2020</td>
+		</tr>
+		<tr>
+			<td><a href="#"></a></td>
+			<td class="line1"></td>
+			<td class="line1"></td>
+			<td class="line1"></td>
+			<td></td>
+		</tr>
+		<tr>
+			<td><a href="#"></a></td>
+			<td class="line1"></td>
+			<td class="line1"></td>
+			<td class="line1"></td>
+			<td class="line1"></td>
+		</tr>
+		<tr>
+			<td class="line1"><a href="#"></a></td>
+			<td class="line1"></td>
+			<td class="line1"></td>
+			<td class="line1"></td>
+			<td class="line1"></td>
+		</tr>
+		<tr>
+			<td class="line1"><a href="#"></a></td>
+			<td class="line1"></td>
+			<td class="line1"></td>
+			<td class="line1"></td>
+			<td class="line1"></td>
+		</tr>
+		<tr>
+			<td class="line1"><a href="#"></a></td>
+			<td class="line1"></td>
+			<td class="line1"></td>
+			<td class="line1"></td>
+			<td class="line1"></td>
+		</tr>
+		<tr>
+			<td class="line1"><a href="#"></a></td>
+			<td class="line1"></td>
+			<td class="line1"></td>
+			<td class="line1"></td>
+			<td class="line1"></td>
+		</tr>
+	</table>
+</main>
+<!--<hr>
+<footer>
+	<div>34 Rue de la Station, 95130 Franconville</div>
+	<div>Télephone : 01 51 53 62 17</div>
+	<div>Email : <a href="mailto:bibliofranconville@info.com">bibliofranconville@info.com</a></div>
+</footer>-->
+</body>
+</html>
